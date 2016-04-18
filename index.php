@@ -149,6 +149,9 @@
         }
     }
 
+    
+    //printf($dblog); // Выводит настройки базы данных
+    
     $log[] = new File_log("logfile.txt");
     $log[] = new Database_log('localhost', 'root', '9200209', 'database', 'loglist');
     $log[] = new Stdout_log();
@@ -157,13 +160,7 @@
     {
         $value->push("Page was updated");
     }
-/*
-    $filelog = new File_log("logfile.log");
-    $file->push("Страница была обновлена.");
+
     
-    $dblog = new Database_log('localhost', 'root', '9200209', 'database', 'loglist');
-    $dblog->push("My first message. Hello!");
-*/
-    //printf($dblog); // Выводит настройки базы данных
 
 ?>
