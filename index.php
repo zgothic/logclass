@@ -152,7 +152,7 @@
     //printf($dblog); // Выводит настройки базы данных
     
     $log[] = new File_log("logfile.txt");
-    $log[] = new Database_log('localhost', 'root', '9200209', 'database', 'loglist');
+    $log[] = new Database_log('localhost', 'root', '000000', 'database', 'loglist');
     $log[] = new Stdout_log();
 
     foreach($log as $value)
