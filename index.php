@@ -140,7 +140,6 @@
     {
         public function __construct($stream)
         {
-            //$temp = $stream;
             if($_SERVER['DOCUMENT_ROOT'] != NULL)
             {
                 $stream = "".$_SERVER['DOCUMENT_ROOT']."/".$stream;
@@ -160,7 +159,5 @@
     {
         $value->push("Page was updated");
     }
-
-    
 
 ?>
